@@ -3,12 +3,11 @@ html {
 
 body {
   margin: 0;
-  background-color: #fcfcfc;
-  font-family: "Open Sans", sans-serif; }
+  background-color: #fcfcfc; }
 
 header {
   background-color: #fcfcfc;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat;
   color: #3d3d3d;
   box-shadow: 0 -10px 40px black; }
 
@@ -20,8 +19,7 @@ header {
 h1 {
   float: left;
   font-size: 3.1rem;
-  margin: 35px 0 0;
-  padding-left: 20px; }
+  margin: 35px 0 0; }
 
 ul {
   float: right;
@@ -30,7 +28,7 @@ ul {
 
 li {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 5px 10px;
   font-size: 2.1rem; }
 
 li:hover {
@@ -49,87 +47,8 @@ video {
   width: 100%; }
 
 .skyline {
-  background-image: url("../images/skyline.png");
+  background-image: url(../images/skyline.png);
   height: 180px;
   width: 100%;
   position: absolute;
-  bottom: 0; }
-
-.informationContainer {
-  max-width: 1280px;
-  margin: 0 auto; }
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #3d3d3d;
-  font-size: 3.5rem;
-  text-align: center;
-  margin-top: 75px; }
-
-.informationText {
-  color: #3d3d3d;
-  max-width: 600px;
-  font-size: 1.6rem;
-  padding: 15px;
-  border-left: 2px solid #3d3d3d; }
-
-.informationContainer > div {
-  overflow: hidden; }
-
-.informationBox:nth-child(2) > .informationText {
-  float: left; }
-
-.informationBox:nth-child(2) > img {
-  float: right; }
-
-.informationBox > .informationText {
-  float: right; }
-
-.projectContainer {
-  max-width: 1280px;
-  margin: 0 auto; }
-
-.ciclovivaBackground {
-  background-color: #fd706b;
-  margin-top: 50px;
-  color: #fcfcfc; }
-
-.BikeoutBackground {
-  background-color: black;
-  height: 800px; }
-
-.project:nth-child(even) {
-  position: relative;
-  z-index: 1; }
-  .project:nth-child(even):before {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .project:nth-child(even):before {
-    top: 0;
-    transform: skewY(1deg);
-    transform-origin: 100% 0; }
-
-.project:nth-child(odd) {
-  position: relative;
-  z-index: 1; }
-  .project:nth-child(odd):before {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; }
-  .project:nth-child(odd):before {
-    top: 0;
-    transform: skewY(-1deg);
-    transform-origin: 0 0; }
+  bottom: 0px; }
