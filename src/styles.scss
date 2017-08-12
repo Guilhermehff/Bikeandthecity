@@ -185,6 +185,10 @@ h2 {
 .projectContainer {
   max-width: 1280px;
   margin: 0 auto;
+  font-size: 2.1rem;
+  padding: 50px 0 100px;
+  overflow: auto;
+  text-align: center;
 }
 
 .ciclovivaBackground {
@@ -194,8 +198,26 @@ h2 {
 }
 
 .BikeoutBackground {
-  background-color: black;
-  height: 800px;
+  background-image: url(../images/bikeoutpattern.png);
+  background-repeat: repeat;
+  background-size: 262px;
+  color: $primary-color;
+}
+
+.godailyBackground {
+  background-color: #ecf0f1;
+}
+
+.atiaiaBackground {
+  color: $primary-color;
+  background-image: url(../images/atiaiapattern.jpg);
+  background-repeat: repeat;
+  background-size: 900px;
+}
+
+.pistaspBackground {
+  color: $primary-color;
+  background-color: #e74755;
 }
 
 .project:nth-child(even) {
@@ -204,4 +226,22 @@ h2 {
 
 .project:nth-child(odd) {
   @include angle(before, true, 1deg);
+}
+
+.project:nth-child(even) .projectInformation {
+  float: right;
+  margin-top: 50px;
+}
+
+.project:nth-child(odd) .projectInformation{
+  float: left;
+  margin-top: 50px;
+}
+
+.project:nth-child(even) .pdfViewer {
+  float: left;
+}
+
+.project:nth-child(odd) .pdfViewer {
+  float: right;
 }
