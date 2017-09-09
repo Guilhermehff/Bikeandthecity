@@ -27,15 +27,27 @@
 
   <main>
 
-    <section class="videoContainer">
+    <a href="#openVideo">
+      <section class="videoContainer">
+        <video class="videoPlayback" autoplay muted loop poster="Assets\images\thumbnail.png">
+          <source src="Assets\videos\Bikeandthecity.mp4" type="video/mp4">
+        </video>
 
-      <video autoplay muted loop poster="Assets\images\test.png">
-      <source src="Assets\videos\teste.mp4" type="video/mp4">
-    </video>
 
-      <div class="skyline"></div>
+        <div class="skyline"></div>
 
-    </section>
+      </section>
+    </a>
+
+    <div id="openVideo" class="modalBackground">
+      <a href="#closeVideo" class="closeModal">
+      </a>
+      <div class="videoModal">
+        <video class="video" autoplay controls muted height="720px" width="1280px" poster="Assets\images\thumbnail.png">
+            <source src="Assets\videos\Bikeandthecity.mp4" type="video/mp4">
+          </video>
+      </div>
+    </div>
 
     <section class="informationContainer">
       <h2>WORKSHOP</h2>
@@ -64,9 +76,16 @@
 
           <div class="projectInformation">
             <img width="350px" src="Assets\images\cicloviva.png" alt="Cicloviva Logo">
-            <p>Lorem ipsum | dolor sit | Lorem ipsum | orem orem</p>
+            <div class="textBox">
+              <p class="ciclovivaText">Anne-Louise Bachmann</p>
+              <p class="ciclovivaText">Caio Henrique</p>
+              <p class="ciclovivaText">Eddie Terzi</p>
+              <p class="ciclovivaText">Henrik Engstrøm</p>
+              <p class="ciclovivaText">Josefine Devantier</p>
+              <p class="ciclovivaText">William Alvelos</p>
+            </div>
           </div>
-          <iframe class="pdfViewer" src = "ViewerJS\#..\Assets\pdfs\cicloviva.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
+          <iframe class="pdfViewer" src="ViewerJS\#..\Assets\pdfs\cicloviva.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
         </div>
       </div>
 
@@ -75,9 +94,15 @@
 
           <div class="projectInformation">
             <img width="350px" src="Assets\images\bikeout.png" alt="Bikeout Logo">
-            <p>Lorem ipsum | dolor sit | Lorem ipsum | orem orem</p>
+            <div class="textBox">
+              <p class="bikeoutText">Beatriz Sabino</p>
+              <p class="bikeoutText">Bianca Quessada</p>
+              <p class="bikeoutText">Edgaras Benediktavicius</p>
+              <p class="bikeoutText">Isabel Pardal</p>
+              <p class="bikeoutText">May Arnaldo</p>
+            </div>
           </div>
-          <iframe class="pdfViewer" src = "ViewerJS\#..\Assets\pdfs\Bikeout.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
+          <iframe class="pdfViewer" src="ViewerJS\#..\Assets\pdfs\Bikeout.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
         </div>
       </div>
 
@@ -86,9 +111,15 @@
 
           <div class="projectInformation">
             <img width="350px" src="Assets\images\godaily.png" alt="godaily Logo">
-            <p>Lorem ipsum | dolor sit | Lorem ipsum | orem orem</p>
+            <div class="textBox">
+              <p class="godailyText">Bruna Bischoff</p>
+              <p class="godailyText">Bruno Figueiredo</p>
+              <p class="godailyText">Paulo Vinícius Leite</p>
+              <p class="godailyText">Sonata Kneziūtė</p>
+              <p class="godailyText">Wilfried Rössler</p>
+            </div>
           </div>
-          <iframe class="pdfViewer" src = "ViewerJS\#..\Assets\pdfs\godaily.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
+          <iframe class="pdfViewer" src="ViewerJS\#..\Assets\pdfs\godaily.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
         </div>
       </div>
 
@@ -97,9 +128,16 @@
 
           <div class="projectInformation">
             <img width="350px" src="Assets\images\atiaia.png" alt="atiaia Logo">
-            <p>Lorem ipsum | dolor sit | Lorem ipsum | orem orem</p>
+            <div class="textBox">
+              <p class="atiaiaText">Adriana Nascimento</p>
+              <p class="atiaiaText">Alessandro Rosenbaum</p>
+              <p class="atiaiaText">André Tokunaga</p>
+              <p class="atiaiaText">Fernanda Ruivo</p>
+              <p class="atiaiaText">Rauno Stein</p>
+              <p class="atiaiaText">Simona Podova</p>
+            </div>
           </div>
-          <iframe class="pdfViewer" src = "ViewerJS\#..\Assets\pdfs\atiaia.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
+          <iframe class="pdfViewer" src="ViewerJS\#..\Assets\pdfs\atiaia.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
         </div>
       </div>
 
@@ -108,15 +146,25 @@
 
           <div class="projectInformation">
             <img width="350px" src="Assets\images\pistasp.png" alt="PistaSP Logo">
-            <p>Lorem ipsum | dolor sit | Lorem ipsum | orem orem</p>
+            <div class="textBox">
+              <p class="pistaSPText">Beatriz Lopez</p>
+              <p class="pistaSPText">Catarina Santos</p>
+              <p class="pistaSPText">Lucas Menezes</p>
+              <p class="pistaSPText">Maarja Koobas</p>
+              <p class="pistaSPText">Murilo Gasparetto</p>
+              <p class="pistaSPText">Teodora Zhekova</p>
+            </div>
           </div>
-          <iframe class="pdfViewer" src = "ViewerJS\#..\Assets\pdfs\cicloviva.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
+          <iframe class="pdfViewer" src="ViewerJS\#..\Assets\pdfs\cicloviva.pdf" width="600px" height="475px" allowfullscreen webkitallowfullscreen></iframe>
         </div>
       </div>
 
 
     </section>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="Assets/js/all.min.js"></script>
   </main>
 </body>
 
