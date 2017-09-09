@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
-  $anchor = window.location.hash;
-  console.log($anchor);
+  $(".video").prop("volume", 0.5);
 
-  if ($anchor == "#closeVideo") {
-    $('.video').get(0).pause()
-  };
+  $('.openModal').click(function(event) {
+    $('.video').get(0).play();
+  });
+
+  $('.closeModal').click(function(event) {
+    $('.video').get(0).pause();
+  });
 
 });
