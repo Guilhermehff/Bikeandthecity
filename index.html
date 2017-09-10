@@ -6,6 +6,7 @@
   <title>Bike and the City</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="Assets/js/all.min.js"></script>
+    <script src="Assets\js\jquery.scrollTo.js"></script>
   <link href="Assets/css/styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:600" rel="stylesheet">
 </head>
@@ -18,9 +19,9 @@
       <h1>BIKE AND THE CITY</h1>
 
       <ul>
-        <li>Workshop</li>
-        <li>Challenge</li>
-        <li>Projects</li>
+        <a href="#workshop"><li>Workshop</li></a>
+        <a href="#challenges"><li>Challenges</li></a>
+        <a href="#projects"><li>Projects</li></a>
         <li>Participants</li>
       </ul>
 
@@ -29,7 +30,7 @@
 
   <main>
 
-    <a href="#openVideo" class="openModal">
+    <a class="openModal">
       <section class="videoContainer">
         <video class="videoPlayback" autoplay muted loop poster="Assets\images\thumbnail.png">
           <source src="Assets\videos\Bikeandthecity.mp4" type="video/mp4">
@@ -41,8 +42,8 @@
       </section>
     </a>
 
-    <div id="openVideo" class="modalBackground">
-      <a href="#closeVideo" class="closeModal">
+    <div class="modalBackground">
+      <a class="closeModal">
       </a>
       <div class="videoModal">
         <video class="video" controls height="720px" width="1280px" poster="Assets\images\thumbnail.png">
@@ -52,7 +53,7 @@
     </div>
 
     <section class="informationContainer">
-      <h2>WORKSHOP</h2>
+      <h2 id="workshop">WORKSHOP</h2>
       <div class="informationBox">
         <img width="400px" src="Assets\images\Icon1.png" alt="Icone de bicicleta">
         <p class="informationText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -61,13 +62,13 @@
           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
-      <h2>CHALLENGES</h2>
+      <h2 id="challenges">CHALLENGES</h2>
       <div class="informationBox">
         <img width="400px" src="Assets\images\Icon1.png" alt="Icone de bicicleta">
         <p class="informationText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <h2>PROJECTS</h2>
+      <h2 id="projects">PROJECTS</h2>
     </section>
 
     <section>

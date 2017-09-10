@@ -92,6 +92,10 @@ header {
   font-family: $fontTitle;
   color: $secondary-color;
   box-shadow: 0 -10px 40px black;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
 }
 
 .headerContainer {
@@ -117,6 +121,8 @@ li {
   display: inline-block;
   padding: 5px 15px;
   font-size: 2.1rem;
+  text-decoration: none;
+  color: $secondary-color;
 }
 
 li:hover {
@@ -129,6 +135,7 @@ li:hover {
   max-height: 80vh;
   overflow: hidden;
   position: relative;
+  margin-top: 85px;
 }
 
 .videoPlayback {
@@ -160,9 +167,8 @@ li:hover {
   pointer-events: none;
 }
 
-.modalBackground:target {
-  opacity: 1;
-  pointer-events: auto;
+.openModal {
+  cursor: pointer;
 }
 
 .closeModal {
@@ -177,6 +183,7 @@ li:hover {
   position: relative;
   z-index: 999999;
 }
+
 .videoModal {
   display: flex;
   justify-content: center;
@@ -237,15 +244,11 @@ h2 {
 }
 
 .BikeoutBackground {
-  background-image: url("../images/bikeoutpattern.png");
-  background-repeat: repeat;
-  background-size: 262px;
+  background-color: #393c3c;
 }
 
 .atiaiaBackground {
-  background-image: url("../images/atiaiapattern.jpg");
-  background-repeat: repeat;
-  background-size: 900px;
+  background-color: #2a292a;
 }
 
 .pistaspBackground {
@@ -289,11 +292,11 @@ h2 {
 }
 
 .project:nth-child(even) {
-  @include angle(before, false, 1deg);
+  @include angle(both, false, 1deg);
 }
 
 .project:nth-child(odd) {
-  @include angle(before, true, 1deg);
+  @include angle(both, true, 1deg);
 }
 
 .project:nth-child(even) .projectInformation {

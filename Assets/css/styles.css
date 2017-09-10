@@ -10,7 +10,11 @@ header {
   background-color: #fcfcfc;
   font-family: "Montserrat", sans-serif;
   color: #3d3d3d;
-  box-shadow: 0 -10px 40px black; }
+  box-shadow: 0 -10px 40px black;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0; }
 
 .headerContainer {
   max-width: 1280px;
@@ -31,7 +35,9 @@ ul {
 li {
   display: inline-block;
   padding: 5px 15px;
-  font-size: 2.1rem; }
+  font-size: 2.1rem;
+  text-decoration: none;
+  color: #3d3d3d; }
 
 li:hover {
   background-color: #3d3d3d;
@@ -41,7 +47,8 @@ li:hover {
   width: 100%;
   max-height: 80vh;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  margin-top: 85px; }
 
 .videoPlayback {
   top: 0;
@@ -69,9 +76,8 @@ li:hover {
   transition: opacity 400ms ease-in;
   pointer-events: none; }
 
-.modalBackground:target {
-  opacity: 1;
-  pointer-events: auto; }
+.openModal {
+  cursor: pointer; }
 
 .closeModal {
   position: absolute;
@@ -134,14 +140,10 @@ h2 {
   margin-top: 50px; }
 
 .BikeoutBackground {
-  background-image: url("../images/bikeoutpattern.png");
-  background-repeat: repeat;
-  background-size: 262px; }
+  background-color: #393c3c; }
 
 .atiaiaBackground {
-  background-image: url("../images/atiaiapattern.jpg");
-  background-repeat: repeat;
-  background-size: 900px; }
+  background-color: #2a292a; }
 
 .pistaspBackground {
   background-color: #e74755; }
@@ -178,7 +180,7 @@ h2 {
 .project:nth-child(even) {
   position: relative;
   z-index: 1; }
-  .project:nth-child(even):before {
+  .project:nth-child(even):before, .project:nth-child(even):after {
     background: inherit;
     content: '';
     display: block;
@@ -192,11 +194,15 @@ h2 {
     top: 0;
     transform: skewY(1deg);
     transform-origin: 100% 0; }
+  .project:nth-child(even):after {
+    bottom: 0;
+    transform: skewY(-1deg);
+    transform-origin: 100%; }
 
 .project:nth-child(odd) {
   position: relative;
   z-index: 1; }
-  .project:nth-child(odd):before {
+  .project:nth-child(odd):before, .project:nth-child(odd):after {
     background: inherit;
     content: '';
     display: block;
@@ -209,6 +215,10 @@ h2 {
   .project:nth-child(odd):before {
     top: 0;
     transform: skewY(-1deg);
+    transform-origin: 0 0; }
+  .project:nth-child(odd):after {
+    bottom: 0;
+    transform: skewY(1deg);
     transform-origin: 0 0; }
 
 .project:nth-child(even) .projectInformation {
