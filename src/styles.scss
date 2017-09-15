@@ -113,21 +113,23 @@ h1 {
 
 ul {
   float: right;
-  list-style-type: none;
   margin-top: 40px;
 }
 
 li {
   display: inline-block;
-  padding: 5px 15px;
   font-size: 2.1rem;
-  text-decoration: none;
-  color: $secondary-color;
 }
 
-li:hover {
+li a:hover {
   background-color: $secondary-color;
   color: $primary-color;
+}
+
+li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: $secondary-color;
 }
 
 .videoContainer {
@@ -192,7 +194,7 @@ li:hover {
   z-index: 99999;
 }
 
-.informationContainer {
+.container {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -213,7 +215,7 @@ h2 {
   border-left: 2px solid $secondary-color;
 }
 
-.informationContainer > div {
+.container > div {
   overflow: hidden;
 }
 
@@ -243,8 +245,12 @@ h2 {
   margin-top: 50px;
 }
 
-.BikeoutBackground {
+.bikeoutBackground {
   background-color: #393c3c;
+}
+
+.godailyBackground {
+  background-color: #ebeff0;
 }
 
 .atiaiaBackground {
@@ -315,4 +321,58 @@ h2 {
 
 .project:nth-child(odd) .pdfViewer {
   float: right;
+}
+
+h3 {
+  font-family: $fontTitle;
+  color: $primary-color;
+  font-size: 2.6rem;
+  text-align: center;
+  padding: 10px;
+  background-color: $secondary-color;
+}
+
+.participantsAlign {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.participants {
+  padding: 5px 10px;
+  color: $primary-color;
+  background-color: $secondary-color;
+  font-family: $fontText;
+  font-size: 1.8rem;
+  margin: 7px 5px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+footer {
+  background-color: $secondary-color;
+  height: 180px;
+  margin-top: 50px;
+  font-family: $fontText;
+  color: $primary-color;
+  font-size: 1.8rem;
+  overflow: auto;
+}
+
+.developed {
+  margin: 20px 0px 7px 0px;
+}
+
+.designer {
+  font-family: $fontText;
+  color: $secondary-color;
+  background-color: $primary-color;
+  margin: 3px;
+  display: table;
+  padding: 2px 5px;
+  font-size: 1.6rem;
+  margin-left: 40px;
 }
