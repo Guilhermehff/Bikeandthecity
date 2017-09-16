@@ -12,13 +12,13 @@ $(document).ready(function() {
 
 
   $('.openModal').click(function(event) {
-    $('.video').get(0).play();
+    $('.video').prop('muted', false);
     $('.modalBackground').css('opacity', '1');
     $('.modalBackground').css('pointer-events', 'auto');
   });
 
   $('.closeModal').click(function(event) {
-    $('.video').get(0).pause();
+    $('.video').prop('muted', true);
     $('.modalBackground').css('opacity', '0');
     $('.modalBackground').css('pointer-events', 'none');
   });
